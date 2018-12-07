@@ -10,8 +10,8 @@ yumSetup() {
 }
 
 aptSetup() {
-	apt update
-  apt install -y ${PACKAGE_NAME}
+	sudo apt update
+  sudo apt install -y ${PACKAGE_NAME}
 }
 
 if [[ ! -z $(which yum) ]]; then
