@@ -1,3 +1,4 @@
+#cloud-boothook
 #!/usr/bin/env bash
 
 PACKAGE_NAME='nginx'
