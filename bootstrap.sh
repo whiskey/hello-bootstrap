@@ -4,13 +4,14 @@ PACKAGE_NAME='nginx'
 
 
 yumSetup() {
-	yum update
-  yum install ${PACKAGE_NAME}
+	yum update -y
+  yum install -y ${PACKAGE_NAME}
+  service ${PACKAGE_NAME} start
 }
 
 aptSetup() {
 	apt update
-  apt install ${PACKAGE_NAME}
+  apt install -y ${PACKAGE_NAME}
 }
 
 if [[ ! -z $(which yum) ]]; then
