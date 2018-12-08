@@ -5,9 +5,9 @@ PACKAGE_NAME='nginx'
 
 
 yumSetup() {
-	yum update -y
-  yum install -y ${PACKAGE_NAME}
-  service ${PACKAGE_NAME} start
+	sudo yum update -y
+  sudo yum install -y ${PACKAGE_NAME}
+  sudo service ${PACKAGE_NAME} start
 }
 
 aptSetup() {
