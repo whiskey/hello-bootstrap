@@ -1,8 +1,9 @@
 #cloud-boothook
 #!/usr/bin/env bash
 
-PACKAGE_NAME='nginx'
+set -e
 
+PACKAGE_NAME='nginx'
 
 yumSetup() {
 	sudo yum update -y
